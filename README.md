@@ -2,6 +2,11 @@
 prova
 prova modifica
 
-<!-- Inizia la cella di testo -->
-ciao siu
-<!-- Termina la cella di testo -->
+```python
+# Titolo della cella
+# Una breve descrizione di cosa fa questa cella
+
+def hello_world():
+    print("Hello, world!")
+
+hello_world()

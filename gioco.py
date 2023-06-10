@@ -1,6 +1,8 @@
 from griglia import *
 import os
 import time
+import platform 
+from standards import *
 
 def turno(griglia_combattimento, giocatore, griglia_colpi, fine_gioco, lista_navi,modalita): 
     
@@ -26,7 +28,8 @@ def turno(griglia_combattimento, giocatore, griglia_colpi, fine_gioco, lista_nav
     
 
     while not fine_turno:
-        os.system('cls')
+        #os.system('cls')
+        clear_console()
         print(giocatore, "Ecco la tua griglia dei colpi effettuati")
         stampa_griglia(griglia_colpi, len(griglia_colpi))
         print(giocatore, "inserisci le coordinate dove vuoi sparare")

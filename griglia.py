@@ -1,6 +1,8 @@
 
 import string
 import os
+import platform
+from standards import *
 """
     prova 
     branch
@@ -206,7 +208,8 @@ def posiziona_navi(griglia, giocatore, lista_navi):
             if result != False:
                 griglia_giocatore, coordinate = result
                 nave.coordinate = coordinate
-                os.system('cls')
+                clear_console()
+                #os.system('cls')
                 stampa_griglia(griglia_giocatore, len(griglia))
                 print("\n\nEcco la tua griglia con le navi posizionate:")
     
